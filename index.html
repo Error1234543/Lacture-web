@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
+
     :root{
       --accent:#16a34a;
       --accent2:#15803d;
@@ -174,6 +175,8 @@
       border-radius:12px;
       font-weight:700;
       transition:0.3s;
+      cursor:pointer;
+      border:none;
     }
 
     .study-btn:hover{
@@ -222,9 +225,15 @@
     </div>
 
     <div class="nav-btns">
-      <a href="https://t.me/+NGUSfa7ns8c4OTll" class="btn">TELEGRAM</a>
 
-      <a href="https://t.me/xdsonic" class="btn">CONTACT</a>
+      <a href="https://t.me/+NGUSfa7ns8c4OTll" class="btn">
+        TELEGRAM
+      </a>
+
+      <a href="https://t.me/xdsonic" class="btn">
+        CONTACT
+      </a>
+
     </div>
 
   </nav>
@@ -268,19 +277,23 @@
             Full JEE & NEET Gujarati Batch with Notes, Tests & Lectures.
           </div>
 
-          <!-- HTML FILE LINK -->
+          <!-- Updated Button -->
 
-       <a href="javascript:void(0)" 
-onclick="openPage('mission/mission.html')" 
-class="study-btn">
+          <button 
+            class="study-btn"
+            onclick="openPage('mission/mission.html')">
+
             STUDY NOW
-          </a>
+
+          </button>
 
         </div>
 
       </div>
 
-      
+    </div>
+
+  </div>
 
   <!-- Footer -->
 
@@ -295,6 +308,16 @@ class="study-btn">
     </p>
 
   </div>
+
+  <!-- Script -->
+
+  <script>
+
+    function openPage(url){
+      window.location.href = url;
+    }
+
+  </script>
 
 </body>
 </html>
