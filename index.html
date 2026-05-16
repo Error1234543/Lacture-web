@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>PW Batches | JEE NEET GUJARATI</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -178,6 +178,7 @@
       transition:0.3s;
       cursor:pointer;
       border:none;
+      outline:none;
     }
 
     .study-btn:hover{
@@ -212,6 +213,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -262,7 +264,7 @@
 
     <div class="grid">
 
-      <!-- Batch 1 -->
+      <!-- Mission Batch -->
 
       <div class="card">
 
@@ -278,8 +280,6 @@
             Full JEE & NEET Gujarati Batch with Notes, Tests & Lectures.
           </div>
 
-          <!-- Updated Button -->
-
           <button 
             class="study-btn"
             onclick="openPage('mission/mission.html')">
@@ -292,37 +292,37 @@
 
       </div>
 
+      <!-- Yakeen Batch -->
+
+      <div class="card">
+
+        <img src="https://i.ibb.co/5Xcyz20M/x.jpg">
+
+        <div class="card-content">
+
+          <div class="batch-name">
+            Yakeen NEET Gujarati 2026
+          </div>
+
+          <div class="batch-desc">
+            Complete NEET Gujarati Batch with Full Lectures, Notes, DPP & Tests.
+          </div>
+
+          <button 
+            class="study-btn"
+            onclick="openPage('yakeen/yakeen.html')">
+
+            STUDY NOW
+
+          </button>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
-
-<!-- Yakeen NEET Gujarati 2026 -->
-
-<div class="card">
-
-  <img src="https://i.ibb.co/5Xcyz20M/x.jpg">
-
-  <div class="card-content">
-
-    <div class="batch-name">
-      Yakeen NEET Gujarati 2026
-    </div>
-
-    <div class="batch-desc">
-      Complete NEET Gujarati Batch with Full Lectures, Notes, DPP & Tests.
-    </div>
-
-    <button 
-  class="study-btn"
-  onclick="openPage('yakeen/yakeen.html')">
-
-  STUDY NOW
-
-</button>
-
-  </div>
-
-</div>
 
   <!-- Footer -->
 
@@ -338,12 +338,26 @@
 
   </div>
 
-  <!-- Script -->
+  <!-- Hidden Navigation Script -->
 
   <script>
 
     function openPage(url){
-      window.location.href = url;
+
+      document.body.style.opacity = "0.98";
+
+      const hiddenLink = document.createElement("a");
+
+      hiddenLink.href = url;
+
+      hiddenLink.style.display = "none";
+
+      document.body.appendChild(hiddenLink);
+
+      hiddenLink.click();
+
+      document.body.removeChild(hiddenLink);
+
     }
 
   </script>
