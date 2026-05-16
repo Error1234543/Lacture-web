@@ -282,7 +282,8 @@
 
           <button 
             class="study-btn"
-            onclick="loadPage('mission/mission.html')"
+            onclick="openPage('mission/mission.html')">
+
             STUDY NOW
 
           </button>
@@ -309,7 +310,7 @@
 
           <button 
             class="study-btn"
-            onclick="loadPage('yakeen/yakeen.html')"
+            onclick="openPage('yakeen/yakeen.html')">
 
             STUDY NOW
 
@@ -339,33 +340,27 @@
 
   <!-- Hidden Navigation Script -->
 
- <script>
+  <script>
 
-async function loadPage(url){
+    function openPage(url){
 
-  try{
+      document.body.style.opacity = "0.98";
 
-    document.body.style.opacity = "0.97";
+      const hiddenLink = document.createElement("a");
 
-    const response = await fetch(url);
+      hiddenLink.href = url;
 
-    const html = await response.text();
+      hiddenLink.style.display = "none";
 
-    document.open();
-    document.write(html);
-    document.close();
+      document.body.appendChild(hiddenLink);
 
-    window.history.pushState({}, '', '/');
+      hiddenLink.click();
 
-  }catch(e){
+      document.body.removeChild(hiddenLink);
 
-    alert("Page Load Failed");
+    }
 
-  }
-
-}
-
-</script>
+  </script>
 
 </body>
 </html>
