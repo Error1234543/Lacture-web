@@ -1,273 +1,378 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>PW Batches | JEE NEET GUJARATI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>PW Batches | JEE NEET GUJARATI</title>
 
-<style>
-:root{
-  --accent:#16a34a;
-  --accent2:#15803d;
-  --dark:#0f172a;
-  --light:#f8fafc;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-*{margin:0;padding:0;box-sizing:border-box;}
+  <style>
 
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--light);
-  color:var(--dark);
-  user-select:none;
-}
+    :root{
+      --accent:#16a34a;
+      --accent2:#15803d;
+      --dark:#0f172a;
+      --light:#f8fafc;
+    }
 
-/* NAV */
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  padding:15px 5%;
-  background:white;
-  box-shadow:0 4px 10px rgba(0,0,0,0.08);
-  position:sticky;
-  top:0;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-.logo{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  font-weight:800;
-  color:var(--accent);
-}
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--light);
+      color:var(--dark);
+      -webkit-user-select:none;
+      user-select:none;
+    }
 
-.logo img{
-  width:40px;height:40px;border-radius:50%;
-}
+    /* Navbar */
 
-.btn{
-  background:var(--accent);
-  color:white;
-  padding:8px 14px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:700;
-}
+    .navbar{
+      width:100%;
+      padding:15px 5%;
+      background:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
 
-/* BANNER */
-.banner{
-  background:linear-gradient(135deg,#16a34a,#22c55e);
-  color:white;
-  text-align:center;
-  padding:50px 20px;
-  border-radius:0 0 30px 30px;
-}
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:1.3rem;
+      font-weight:800;
+      color:var(--accent);
+    }
 
-/* GRID */
-.container{
-  padding:40px 5%;
-}
+    .logo img{
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      object-fit:cover;
+    }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
+    .nav-btns{
+      display:flex;
+      gap:10px;
+    }
 
-.card{
-  background:white;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
+    .btn{
+      background:var(--accent);
+      color:white;
+      text-decoration:none;
+      padding:9px 16px;
+      border-radius:10px;
+      font-size:0.85rem;
+      font-weight:700;
+      transition:0.3s;
+    }
 
-.card img{
-  width:100%;
-  height:170px;
-  object-fit:cover;
-}
+    .btn:hover{
+      transform:scale(1.05);
+      background:var(--accent2);
+    }
 
-.card-content{
-  padding:15px;
-  text-align:center;
-}
+    /* Banner */
 
-.study-btn{
-  background:var(--accent);
-  color:white;
-  border:none;
-  padding:12px 18px;
-  border-radius:12px;
-  font-weight:700;
-  cursor:pointer;
-}
+    .banner{
+      background:linear-gradient(135deg,#16a34a,#22c55e);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+      border-radius:0 0 35px 35px;
+    }
 
-/* FOOTER */
-.footer{
-  margin:40px 5%;
-  padding:25px;
-  background:linear-gradient(135deg,#166534,#15803d);
-  color:white;
-  text-align:center;
-  border-radius:20px;
-}
-</style>
+    .banner h1{
+      font-size:2.2rem;
+      margin-bottom:12px;
+    }
+
+    .banner p{
+      font-size:1rem;
+      line-height:1.7;
+      opacity:0.95;
+    }
+
+    /* Container */
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:40px 5%;
+    }
+
+    .section-title{
+      font-size:1.8rem;
+      margin-bottom:25px;
+      font-weight:800;
+      color:var(--accent2);
+      text-align:center;
+    }
+
+    /* Grid */
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    /* Card */
+
+    .card{
+      background:white;
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 5px 18px rgba(0,0,0,0.08);
+      transition:0.3s;
+      border:1px solid #dcfce7;
+      -webkit-touch-callout:none;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      pointer-events:none;
+      -webkit-user-drag:none;
+    }
+
+    .card-content{
+      padding:18px;
+      text-align:center;
+    }
+
+    .batch-name{
+      font-size:1.2rem;
+      font-weight:800;
+      margin-bottom:10px;
+      color:#166534;
+    }
+
+    .batch-desc{
+      font-size:0.92rem;
+      color:#475569;
+      margin-bottom:18px;
+      line-height:1.6;
+    }
+
+    .study-btn{
+      display:inline-block;
+      text-decoration:none;
+      background:var(--accent);
+      color:white;
+      padding:12px 22px;
+      border-radius:12px;
+      font-weight:700;
+      transition:0.3s;
+      cursor:pointer;
+      border:none;
+      outline:none;
+      -webkit-touch-callout:none;
+    }
+
+    .study-btn:hover{
+      background:var(--accent2);
+      transform:scale(1.05);
+    }
+
+    /* Footer */
+
+    .footer-box{
+      margin:40px 5%;
+      padding:25px;
+      border-radius:22px;
+      background:linear-gradient(135deg,#166534,#15803d);
+      color:white;
+      text-align:center;
+      line-height:1.8;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    @media(max-width:700px){
+
+      .navbar{
+        flex-direction:column;
+        gap:12px;
+      }
+
+      .banner h1{
+        font-size:1.8rem;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="navbar">
-  <div class="logo">
-    <img src="https://i.ibb.co/Q152gXX/x.jpg">
-    JEE NEET GUJ
-  </div>
+  <!-- Navbar -->
 
-  <div>
-    <a class="btn" href="https://t.me/+NGUSfa7ns8c4OTll">TELEGRAM</a>
-  </div>
-</div>
+  <nav class="navbar">
 
-<!-- BANNER -->
-<div class="banner">
-  <h1>PW JEE • NEET Gujarati Batches</h1>
-  <p>Start Your Preparation Today 🚀</p>
-</div>
-
-<!-- CONTENT -->
-<div class="container">
-<div class="grid">
-
-  <div class="card">
-    <img src="https://i.ibb.co/Y4x5zYCP/x.jpg">
-    <div class="card-content">
-      <h3>Mission 100 NEET</h3>
-      <button class="study-btn" data-p="bWlzc2lvbi9taXNzaW9uLmh0bWw=">
-        STUDY NOW
-      </button>
+<div class="logo">
+      <img src="https://i.ibb.co/Q152gXX/x.jpg" draggable="false">
+      JEE NEET GUJ
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://i.ibb.co/5Xcyz20M/x.jpg">
-    <div class="card-content">
-      <h3>Yakeen NEET</h3>
-      <button class="study-btn" data-p="eWFrZWVuL3lha2Vlbi5odG1s">
-        STUDY NOW
-      </button>
+    <div class="nav-btns">
+
+      <a href="https://t.me/+NGUSfa7ns8c4OTll" class="btn">TELEGRAM</a>
+      <a href="https://t.me/xdsonic" class="btn">CONTACT</a>
+
     </div>
+
+  </nav>
+
+  <!-- Banner -->
+
+  <section class="banner">
+
+    <h1>PW JEE • NEET Gujarati Batches</h1>
+
+    <p>
+      Start Your Preparation Today 🚀 <br>
+      ટેસ્ટ આપો • રેન્ક વધારો • ટોપ કરો
+    </p>
+
+  </section>
+
+  <!-- Main -->
+
+  <div class="container">
+
+    <h2 class="section-title">Premium Study Batches</h2>
+
+    <div class="grid">
+
+      <!-- ── Mission Batch ── -->
+      <div class="card">
+
+        <img src="https://i.ibb.co/Y4x5zYCP/x.jpg" draggable="false">
+
+        <div class="card-content">
+          <div class="batch-name">Mission 100 NEET Gujarati 2026</div>
+          <div class="batch-desc">Full JEE & NEET Gujarati Batch with Notes, Tests & Lectures.</div>
+
+          <!-- data-p = btoa('mission/mission.html') -->
+          <button class="study-btn" data-p="bWlzc2lvbi9taXNzaW9uLmh0bWw=">
+            STUDY NOW
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ── Yakeen Batch ── -->
+      <div class="card">
+
+        <img src="https://i.ibb.co/5Xcyz20M/x.jpg" draggable="false">
+
+        <div class="card-content">
+          <div class="batch-name">Yakeen NEET Gujarati 2026</div>
+          <div class="batch-desc">Complete NEET Gujarati Batch with Full Lectures, Notes, DPP & Tests.</div>
+
+          <!-- data-p = btoa('yakeen/yakeen.html') -->
+          <button class="study-btn" data-p="eWFrZWVuL3lha2Vlbi5odG1s">
+            STUDY NOW
+          </button>
+        </div>
+
+      </div>
+
+      <!--
+        ═══════════════════════════════════════
+        NAYI BATCH ADD KARNE KA TARIKA:
+        ═══════════════════════════════════════
+        1. Neeche card copy karo
+        2. data-p mein ye value daalo:
+           Browser console mein type karo:
+           btoa('foldername/filename.html')
+           Aaya hua result data-p mein paste karo
+        ═══════════════════════════════════════
+      -->
+
+    </div>
+
   </div>
 
-</div>
-</div>
+  <!-- Footer -->
 
-<!-- FOOTER -->
-<div class="footer">
-  <h2>JEE NEET GUJARATI</h2>
-  <p>Best Gujarati Learning Platform</p>
-</div>
+  <div class="footer-box">
+    <h2>JEE NEET GUJARATI</h2>
+    <p>
+      📚 Best Gujarati Learning Platform <br>
+      🚀 Daily Study Material & Tests <br>
+      💚 Powered By PW Batches
+    </p>
+  </div>
 
+  <script>
+
+    // ── BATCH NAVIGATION (URL Hidden) ───────
+    // Buttons mein href nahi, data-p attribute mein btoa() encoded path hai
+    // Click par runtime decode hota hai — inspect mein plain URL nahi dikhti
+
+    document.querySelectorAll('.study-btn[data-p]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        try {
+          const url = atob(btn.getAttribute('data-p'));
+          const a = document.createElement('a');
+          a.href = url;
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        } catch(e) {}
+      });
+    });
+
+    // ── ANTI LEAK ───────────────────────────
+
+    // Right-click disable
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Text select disable
+    document.addEventListener('selectstart', e => e.preventDefault());
+
+    // Drag disable
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    // Image long-press save disable (iOS/Android)
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
+    });
+
+    // Keyboard shortcuts block (Ctrl+U, Ctrl+S, F12)
+    document.addEventListener('keydown', e => {
+      if (
+        (e.ctrlKey && ['u','s','U','S'].includes(e.key)) ||
+        e.key === 'F12'
+      ) e.preventDefault();
+    });
+
+  </script>
 <script>
-// OPEN BATCH
-document.querySelectorAll('.study-btn').forEach(btn=>{
-  btn.onclick = ()=>{
-    window.location.href = atob(btn.getAttribute('data-p'));
-  };
-});
-
-// BLOCK RIGHT CLICK
-document.addEventListener('contextmenu',e=>e.preventDefault());
-document.addEventListener('selectstart',e=>e.preventDefault());
-document.addEventListener('dragstart',e=>e.preventDefault());
-
-// EXPIRY SYSTEM
-const expiry = localStorage.getItem("premium_expiry");
-
-if(!expiry || Date.now() > Number(expiry)){
-
-document.body.innerHTML = `
-<div style="
-background:linear-gradient(135deg,#020617,#0f172a,#111827);
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:Arial;
-padding:20px;
-">
-
-<div style="
-width:100%;
-max-width:400px;
-background:rgba(255,255,255,0.06);
-border-radius:20px;
-padding:30px;
-text-align:center;
-color:white;
-">
-
-<h1>LACTURE ACCESS</h1>
-
-<p style="margin-top:10px;color:#cbd5e1;">
-24 hours access unlock karne ke liye token generate karo nhi smj aaye to msg kro
-</p>
-
-<!-- GENERATOR BUTTON (NO LINK SHOWN) -->
-<a href="generator.html" style="text-decoration:none;">
-  <button style="
-    width:100%;
-    margin-top:20px;
-    padding:15px;
-    border:none;
-    border-radius:14px;
-    background:linear-gradient(135deg,#7c3aed,#2563eb);
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-  ">
-    ⚡ Generate Token
-  </button>
-</a>
-
-<!-- YOUTUBE SECTION -->
-<div style="margin-top:25px;">
-
-<p style="color:#cbd5e1;margin-bottom:10px;">
-🎥 How to generate token
-</p>
-
-<a href="https://youtu.be/OQGaF7j3Fm0" target="_blank"
-style="
-display:inline-flex;
-align-items:center;
-gap:10px;
-padding:10px 14px;
-background:rgba(255,255,255,0.05);
-border-radius:12px;
-color:#60a5fa;
-text-decoration:none;
-font-weight:bold;
-">
-
-<!-- YouTube Logo -->
-<svg width="22" height="22" viewBox="0 0 24 24" fill="red">
-<path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zM9 15.568v-7.137l7 3.57-7 3.567z"/>
-</svg>
-
-Watch Video
-</a>
-
-</div>
-
-</div>
-</div>
-`;
-
-}
-
+  function openPopup(id){ document.getElementById('popup-'+id).classList.add('active'); }
+  function closePopup(id){ document.getElementById('popup-'+id).classList.remove('active'); }
 </script>
 
 </body>
