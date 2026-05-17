@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
-
     :root{
       --accent:#16a34a;
       --accent2:#15803d;
@@ -17,21 +16,14 @@
       --light:#f8fafc;
     }
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+    *{margin:0;padding:0;box-sizing:border-box;}
 
     body{
       font-family:'Inter',sans-serif;
       background:var(--light);
       color:var(--dark);
-      -webkit-user-select:none;
       user-select:none;
     }
-
-    /* Navbar */
 
     .navbar{
       width:100%;
@@ -56,15 +48,7 @@
     }
 
     .logo img{
-      width:42px;
-      height:42px;
-      border-radius:50%;
-      object-fit:cover;
-    }
-
-    .nav-btns{
-      display:flex;
-      gap:10px;
+      width:42px;height:42px;border-radius:50%;
     }
 
     .btn{
@@ -75,15 +59,7 @@
       border-radius:10px;
       font-size:0.85rem;
       font-weight:700;
-      transition:0.3s;
     }
-
-    .btn:hover{
-      transform:scale(1.05);
-      background:var(--accent2);
-    }
-
-    /* Banner */
 
     .banner{
       background:linear-gradient(135deg,#16a34a,#22c55e);
@@ -93,34 +69,11 @@
       border-radius:0 0 35px 35px;
     }
 
-    .banner h1{
-      font-size:2.2rem;
-      margin-bottom:12px;
-    }
-
-    .banner p{
-      font-size:1rem;
-      line-height:1.7;
-      opacity:0.95;
-    }
-
-    /* Container */
-
     .container{
       max-width:1200px;
       margin:auto;
       padding:40px 5%;
     }
-
-    .section-title{
-      font-size:1.8rem;
-      margin-bottom:25px;
-      font-weight:800;
-      color:var(--accent2);
-      text-align:center;
-    }
-
-    /* Grid */
 
     .grid{
       display:grid;
@@ -128,29 +81,17 @@
       gap:25px;
     }
 
-    /* Card */
-
     .card{
       background:white;
       border-radius:22px;
       overflow:hidden;
       box-shadow:0 5px 18px rgba(0,0,0,0.08);
-      transition:0.3s;
-      border:1px solid #dcfce7;
-      -webkit-touch-callout:none;
-    }
-
-    .card:hover{
-      transform:translateY(-6px);
-      box-shadow:0 12px 25px rgba(0,0,0,0.12);
     }
 
     .card img{
       width:100%;
       height:180px;
       object-fit:cover;
-      pointer-events:none;
-      -webkit-user-drag:none;
     }
 
     .card-content{
@@ -158,41 +99,15 @@
       text-align:center;
     }
 
-    .batch-name{
-      font-size:1.2rem;
-      font-weight:800;
-      margin-bottom:10px;
-      color:#166534;
-    }
-
-    .batch-desc{
-      font-size:0.92rem;
-      color:#475569;
-      margin-bottom:18px;
-      line-height:1.6;
-    }
-
     .study-btn{
-      display:inline-block;
-      text-decoration:none;
       background:var(--accent);
       color:white;
       padding:12px 22px;
       border-radius:12px;
       font-weight:700;
-      transition:0.3s;
-      cursor:pointer;
       border:none;
-      outline:none;
-      -webkit-touch-callout:none;
+      cursor:pointer;
     }
-
-    .study-btn:hover{
-      background:var(--accent2);
-      transform:scale(1.05);
-    }
-
-    /* Footer */
 
     .footer-box{
       margin:40px 5%;
@@ -201,177 +116,137 @@
       background:linear-gradient(135deg,#166534,#15803d);
       color:white;
       text-align:center;
-      line-height:1.8;
-      box-shadow:0 10px 25px rgba(0,0,0,0.2);
     }
-
-    @media(max-width:700px){
-
-      .navbar{
-        flex-direction:column;
-        gap:12px;
-      }
-
-      .banner h1{
-        font-size:1.8rem;
-      }
-
-    }
-
   </style>
-
 </head>
 
 <body>
 
-  <!-- Navbar -->
+<!-- NAV -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="https://i.ibb.co/Q152gXX/x.jpg">
+    JEE NEET GUJ
+  </div>
 
-  <nav class="navbar">
+  <div>
+    <a href="https://t.me/+NGUSfa7ns8c4OTll" class="btn">TELEGRAM</a>
+    <a href="https://t.me/xdsonic" class="btn">CONTACT</a>
+  </div>
+</nav>
 
-    <div class="logo">
-      <img src="https://i.ibb.co/Q152gXX/x.jpg" draggable="false">
-      JEE NEET GUJ
+<!-- BANNER -->
+<section class="banner">
+  <h1>PW JEE • NEET Gujarati Batches</h1>
+  <p>Start Your Preparation Today 🚀</p>
+</section>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://i.ibb.co/Y4x5zYCP/x.jpg">
+      <div class="card-content">
+        <h3>Mission 100 NEET</h3>
+        <button class="study-btn" data-p="bWlzc2lvbi9taXNzaW9uLmh0bWw=">
+          STUDY NOW
+        </button>
+      </div>
     </div>
 
-    <div class="nav-btns">
-
-      <a href="https://t.me/+NGUSfa7ns8c4OTll" class="btn">TELEGRAM</a>
-      <a href="https://t.me/xdsonic" class="btn">CONTACT</a>
-
-    </div>
-
-  </nav>
-
-  <!-- Banner -->
-
-  <section class="banner">
-
-    <h1>PW JEE • NEET Gujarati Batches</h1>
-
-    <p>
-      Start Your Preparation Today 🚀 <br>
-      ટેસ્ટ આપો • રેન્ક વધારો • ટોપ કરો
-    </p>
-
-  </section>
-
-  <!-- Main -->
-
-  <div class="container">
-
-    <h2 class="section-title">Premium Study Batches</h2>
-
-    <div class="grid">
-
-      <!-- ── Mission Batch ── -->
-      <div class="card">
-
-        <img src="https://i.ibb.co/Y4x5zYCP/x.jpg" draggable="false">
-
-        <div class="card-content">
-          <div class="batch-name">Mission 100 NEET Gujarati 2026</div>
-          <div class="batch-desc">Full JEE & NEET Gujarati Batch with Notes, Tests & Lectures.</div>
-
-          <!-- data-p = btoa('mission/mission.html') -->
-          <button class="study-btn" data-p="bWlzc2lvbi9taXNzaW9uLmh0bWw=">
-            STUDY NOW
-          </button>
-        </div>
-
+    <div class="card">
+      <img src="https://i.ibb.co/5Xcyz20M/x.jpg">
+      <div class="card-content">
+        <h3>Yakeen NEET</h3>
+        <button class="study-btn" data-p="eWFrZWVuL3lha2Vlbi5odG1s">
+          STUDY NOW
+        </button>
       </div>
-
-      <!-- ── Yakeen Batch ── -->
-      <div class="card">
-
-        <img src="https://i.ibb.co/5Xcyz20M/x.jpg" draggable="false">
-
-        <div class="card-content">
-          <div class="batch-name">Yakeen NEET Gujarati 2026</div>
-          <div class="batch-desc">Complete NEET Gujarati Batch with Full Lectures, Notes, DPP & Tests.</div>
-
-          <!-- data-p = btoa('yakeen/yakeen.html') -->
-          <button class="study-btn" data-p="eWFrZWVuL3lha2Vlbi5odG1s">
-            STUDY NOW
-          </button>
-        </div>
-
-      </div>
-
-      <!--
-        ═══════════════════════════════════════
-        NAYI BATCH ADD KARNE KA TARIKA:
-        ═══════════════════════════════════════
-        1. Neeche card copy karo
-        2. data-p mein ye value daalo:
-           Browser console mein type karo:
-           btoa('foldername/filename.html')
-           Aaya hua result data-p mein paste karo
-        ═══════════════════════════════════════
-      -->
-
     </div>
 
   </div>
+</div>
 
-  <!-- Footer -->
+<!-- FOOTER -->
+<div class="footer-box">
+  <h2>JEE NEET GUJARATI</h2>
+  <p>Best Gujarati Learning Platform</p>
+</div>
 
-  <div class="footer-box">
-    <h2>JEE NEET GUJARATI</h2>
-    <p>
-      📚 Best Gujarati Learning Platform <br>
-      🚀 Daily Study Material & Tests <br>
-      💚 Powered By PW Batches
-    </p>
-  </div>
-
-  <script>
-
-    // ── BATCH NAVIGATION (URL Hidden) ───────
-    // Buttons mein href nahi, data-p attribute mein btoa() encoded path hai
-    // Click par runtime decode hota hai — inspect mein plain URL nahi dikhti
-
-    document.querySelectorAll('.study-btn[data-p]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        try {
-          const url = atob(btn.getAttribute('data-p'));
-          const a = document.createElement('a');
-          a.href = url;
-          a.style.display = 'none';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        } catch(e) {}
-      });
-    });
-
-    // ── ANTI LEAK ───────────────────────────
-
-    // Right-click disable
-    document.addEventListener('contextmenu', e => e.preventDefault());
-
-    // Text select disable
-    document.addEventListener('selectstart', e => e.preventDefault());
-
-    // Drag disable
-    document.addEventListener('dragstart', e => e.preventDefault());
-
-    // Image long-press save disable (iOS/Android)
-    document.querySelectorAll('img').forEach(img => {
-      img.addEventListener('touchstart', e => e.preventDefault(), { passive: false });
-    });
-
-    // Keyboard shortcuts block (Ctrl+U, Ctrl+S, F12)
-    document.addEventListener('keydown', e => {
-      if (
-        (e.ctrlKey && ['u','s','U','S'].includes(e.key)) ||
-        e.key === 'F12'
-      ) e.preventDefault();
-    });
-
-  </script>
 <script>
-  function openPopup(id){ document.getElementById('popup-'+id).classList.add('active'); }
-  function closePopup(id){ document.getElementById('popup-'+id).classList.remove('active'); }
+  // NAVIGATION FIXED
+  document.querySelectorAll('.study-btn[data-p]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const url = atob(btn.getAttribute('data-p'));
+      window.location.href = url;
+    });
+  });
+
+  // BLOCK ACTIONS
+  document.addEventListener('contextmenu',e=>e.preventDefault());
+  document.addEventListener('selectstart',e=>e.preventDefault());
+  document.addEventListener('dragstart',e=>e.preventDefault());
+
+  // EXPIRY SYSTEM FIXED
+  const expiry = localStorage.getItem("premium_expiry");
+
+  if(!expiry || Date.now() > Number(expiry)){
+
+    document.body.innerHTML = `
+    <div style="
+      background:linear-gradient(135deg,#020617,#0f172a,#111827);
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-family:Arial;
+    ">
+
+      <div style="
+        width:90%;
+        max-width:400px;
+        background:rgba(255,255,255,0.06);
+        border-radius:20px;
+        padding:30px;
+        color:white;
+        text-align:center;
+      ">
+
+        <h1>Unlimited Test Access</h1>
+        <p>24 hours access unlock karne ke liye token generate karo</p>
+
+        <a href="generator.html">
+          <button style="
+            width:100%;
+            padding:14px;
+            margin-top:20px;
+            border:none;
+            border-radius:12px;
+            background:linear-gradient(135deg,#7c3aed,#2563eb);
+            color:white;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+          ">
+            ⚡ Generate Token
+          </button>
+        </a>
+
+        <p style="margin-top:15px;color:#aaa;">
+          Token banane ke liye video dekho
+        </p>
+
+        <a href="https://youtu.be/OQGaF7j3Fm0" target="_blank" style="color:#60a5fa;">
+          Click Here
+        </a>
+
+      </div>
+    </div>
+    `;
+  }
+
 </script>
 
 </body>
