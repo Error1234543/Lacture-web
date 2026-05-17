@@ -1,251 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PW Batches | JEE NEET GUJARATI</title>
 
-  <title>PW Batches | JEE NEET GUJARATI</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#16a34a;
+  --accent2:#15803d;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
 
-  <style>
-    :root{
-      --accent:#16a34a;
-      --accent2:#15803d;
-      --dark:#0f172a;
-      --light:#f8fafc;
-    }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-    *{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--light);
+  color:var(--dark);
+  user-select:none;
+}
 
-    body{
-      font-family:'Inter',sans-serif;
-      background:var(--light);
-      color:var(--dark);
-      user-select:none;
-    }
+/* NAV */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 5%;
+  background:white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+}
 
-    .navbar{
-      width:100%;
-      padding:15px 5%;
-      background:white;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      box-shadow:0 4px 10px rgba(0,0,0,0.08);
-      position:sticky;
-      top:0;
-      z-index:100;
-    }
+.logo{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  font-weight:800;
+  color:var(--accent);
+}
 
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-size:1.3rem;
-      font-weight:800;
-      color:var(--accent);
-    }
+.logo img{
+  width:40px;height:40px;border-radius:50%;
+}
 
-    .logo img{
-      width:42px;height:42px;border-radius:50%;
-    }
+.btn{
+  background:var(--accent);
+  color:white;
+  padding:8px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+}
 
-    .btn{
-      background:var(--accent);
-      color:white;
-      text-decoration:none;
-      padding:9px 16px;
-      border-radius:10px;
-      font-size:0.85rem;
-      font-weight:700;
-    }
+/* BANNER */
+.banner{
+  background:linear-gradient(135deg,#16a34a,#22c55e);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+  border-radius:0 0 30px 30px;
+}
 
-    .banner{
-      background:linear-gradient(135deg,#16a34a,#22c55e);
-      color:white;
-      text-align:center;
-      padding:60px 20px;
-      border-radius:0 0 35px 35px;
-    }
+/* GRID */
+.container{
+  padding:40px 5%;
+}
 
-    .container{
-      max-width:1200px;
-      margin:auto;
-      padding:40px 5%;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
 
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:25px;
-    }
+.card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
 
-    .card{
-      background:white;
-      border-radius:22px;
-      overflow:hidden;
-      box-shadow:0 5px 18px rgba(0,0,0,0.08);
-    }
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
 
-    .card img{
-      width:100%;
-      height:180px;
-      object-fit:cover;
-    }
+.card-content{
+  padding:15px;
+  text-align:center;
+}
 
-    .card-content{
-      padding:18px;
-      text-align:center;
-    }
+.study-btn{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:12px 18px;
+  border-radius:12px;
+  font-weight:700;
+  cursor:pointer;
+}
 
-    .study-btn{
-      background:var(--accent);
-      color:white;
-      padding:12px 22px;
-      border-radius:12px;
-      font-weight:700;
-      border:none;
-      cursor:pointer;
-    }
-
-    .footer-box{
-      margin:40px 5%;
-      padding:25px;
-      border-radius:22px;
-      background:linear-gradient(135deg,#166534,#15803d);
-      color:white;
-      text-align:center;
-    }
-  </style>
+/* FOOTER */
+.footer{
+  margin:40px 5%;
+  padding:25px;
+  background:linear-gradient(135deg,#166534,#15803d);
+  color:white;
+  text-align:center;
+  border-radius:20px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- NAV -->
-<nav class="navbar">
+<div class="navbar">
   <div class="logo">
     <img src="https://i.ibb.co/Q152gXX/x.jpg">
     JEE NEET GUJ
   </div>
 
   <div>
-    <a href="https://t.me/+NGUSfa7ns8c4OTll" class="btn">TELEGRAM</a>
-    <a href="https://t.me/xdsonic" class="btn">CONTACT</a>
-  </div>
-</nav>
-
-<!-- BANNER -->
-<section class="banner">
-  <h1>PW JEE • NEET Gujarati Batches</h1>
-  <p>Start Your Preparation Today 🚀</p>
-</section>
-
-<!-- CONTENT -->
-<div class="container">
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://i.ibb.co/Y4x5zYCP/x.jpg">
-      <div class="card-content">
-        <h3>Mission 100 NEET</h3>
-        <button class="study-btn" data-p="bWlzc2lvbi9taXNzaW9uLmh0bWw=">
-          STUDY NOW
-        </button>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://i.ibb.co/5Xcyz20M/x.jpg">
-      <div class="card-content">
-        <h3>Yakeen NEET</h3>
-        <button class="study-btn" data-p="eWFrZWVuL3lha2Vlbi5odG1s">
-          STUDY NOW
-        </button>
-      </div>
-    </div>
-
+    <a class="btn" href="https://t.me/+NGUSfa7ns8c4OTll">TELEGRAM</a>
   </div>
 </div>
 
+<!-- BANNER -->
+<div class="banner">
+  <h1>PW JEE • NEET Gujarati Batches</h1>
+  <p>Start Your Preparation Today 🚀</p>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+<div class="grid">
+
+  <div class="card">
+    <img src="https://i.ibb.co/Y4x5zYCP/x.jpg">
+    <div class="card-content">
+      <h3>Mission 100 NEET</h3>
+      <button class="study-btn" data-p="bWlzc2lvbi9taXNzaW9uLmh0bWw=">
+        STUDY NOW
+      </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/5Xcyz20M/x.jpg">
+    <div class="card-content">
+      <h3>Yakeen NEET</h3>
+      <button class="study-btn" data-p="eWFrZWVuL3lha2Vlbi5odG1s">
+        STUDY NOW
+      </button>
+    </div>
+  </div>
+
+</div>
+</div>
+
 <!-- FOOTER -->
-<div class="footer-box">
+<div class="footer">
   <h2>JEE NEET GUJARATI</h2>
   <p>Best Gujarati Learning Platform</p>
 </div>
 
 <script>
-  // NAVIGATION FIXED
-  document.querySelectorAll('.study-btn[data-p]').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const url = atob(btn.getAttribute('data-p'));
-      window.location.href = url;
-    });
-  });
+// OPEN BATCH
+document.querySelectorAll('.study-btn').forEach(btn=>{
+  btn.onclick = ()=>{
+    window.location.href = atob(btn.getAttribute('data-p'));
+  };
+});
 
-  // BLOCK ACTIONS
-  document.addEventListener('contextmenu',e=>e.preventDefault());
-  document.addEventListener('selectstart',e=>e.preventDefault());
-  document.addEventListener('dragstart',e=>e.preventDefault());
+// BLOCK RIGHT CLICK
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('selectstart',e=>e.preventDefault());
+document.addEventListener('dragstart',e=>e.preventDefault());
 
-  // EXPIRY SYSTEM FIXED
-  const expiry = localStorage.getItem("premium_expiry");
+// EXPIRY SYSTEM
+const expiry = localStorage.getItem("premium_expiry");
 
-  if(!expiry || Date.now() > Number(expiry)){
+if(!expiry || Date.now() > Number(expiry)){
 
-    document.body.innerHTML = `
-    <div style="
-      background:linear-gradient(135deg,#020617,#0f172a,#111827);
-      height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      font-family:Arial;
-    ">
+document.body.innerHTML = `
+<div style="
+background:linear-gradient(135deg,#020617,#0f172a,#111827);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+padding:20px;
+">
 
-      <div style="
-        width:90%;
-        max-width:400px;
-        background:rgba(255,255,255,0.06);
-        border-radius:20px;
-        padding:30px;
-        color:white;
-        text-align:center;
-      ">
+<div style="
+width:100%;
+max-width:400px;
+background:rgba(255,255,255,0.06);
+border-radius:20px;
+padding:30px;
+text-align:center;
+color:white;
+">
 
-        <h1>Unlimited Test Access</h1>
-        <p>24 hours access unlock karne ke liye token generate karo</p>
+<h1>Unlimited Test Access</h1>
 
-        <a href="generator.html">
-          <button style="
-            width:100%;
-            padding:14px;
-            margin-top:20px;
-            border:none;
-            border-radius:12px;
-            background:linear-gradient(135deg,#7c3aed,#2563eb);
-            color:white;
-            font-size:16px;
-            font-weight:bold;
-            cursor:pointer;
-          ">
-            ⚡ Generate Token
-          </button>
-        </a>
+<p style="margin-top:10px;color:#cbd5e1;">
+24 hours access unlock karne ke liye token generate karo
+</p>
 
-        <p style="margin-top:15px;color:#aaa;">
-          Token banane ke liye video dekho
-        </p>
+<!-- GENERATOR BUTTON (NO LINK SHOWN) -->
+<a href="generator.html" style="text-decoration:none;">
+  <button style="
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+  ">
+    ⚡ Generate Token
+  </button>
+</a>
 
-        <a href="https://youtu.be/OQGaF7j3Fm0" target="_blank" style="color:#60a5fa;">
-          Click Here
-        </a>
+<!-- YOUTUBE SECTION -->
+<div style="margin-top:25px;">
 
-      </div>
-    </div>
-    `;
-  }
+<p style="color:#cbd5e1;margin-bottom:10px;">
+🎥 How to generate token
+</p>
+
+<a href="https://youtu.be/OQGaF7j3Fm0" target="_blank"
+style="
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:10px 14px;
+background:rgba(255,255,255,0.05);
+border-radius:12px;
+color:#60a5fa;
+text-decoration:none;
+font-weight:bold;
+">
+
+<!-- YouTube Logo -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="red">
+<path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zM9 15.568v-7.137l7 3.57-7 3.567z"/>
+</svg>
+
+Watch Video
+</a>
+
+</div>
+
+</div>
+</div>
+`;
+
+}
 
 </script>
 
